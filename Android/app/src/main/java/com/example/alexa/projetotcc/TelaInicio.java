@@ -17,13 +17,13 @@ public class TelaInicio extends AppCompatActivity {
         @Override
         public boolean onNavigationItemSelected(@NonNull MenuItem item) {
             switch (item.getItemId()) {
-                case R.id.navigation_home:
+                case R.id.navigation_favorito:
+                    mTextMessage.setText(R.string.title_favorito);
+                    return true;
+                case R.id.navigation_grupo:
                     mTextMessage.setText(R.string.title_grupo);
                     return true;
-                case R.id.navigation_dashboard:
-                    mTextMessage.setText(R.string.title_dashboard);
-                    return true;
-                case R.id.navigation_notifications:
+                case R.id.navigation_perfil:
                     mTextMessage.setText(R.string.title_perfil);
                     return true;
             }

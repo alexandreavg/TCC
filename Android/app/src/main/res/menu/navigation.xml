@@ -1,19 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
-<menu xmlns:android="http://schemas.android.com/apk/res/android">
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
 
 
     <item
-        android:id="@+id/navigation_home"
+        android:id="@+id/navigation_favorito"
+        android:icon="@drawable/icone_favorito"
+        android:title="@string/title_favorito"
+        android:visible="true" />
+
+    <item
+        android:id="@+id/navigation_grupo"
         android:icon="@drawable/icone_grupo"
         android:title="@string/title_grupo" />
 
     <item
-        android:id="@+id/navigation_dashboard"
-        android:icon="@drawable/ic_dashboard_black_24dp"
-        android:title="@string/title_dashboard" />
-
-    <item
-        android:id="@+id/navigation_notifications"
+        android:id="@+id/navigation_perfil"
         android:icon="@drawable/icone_perfil"
         android:title="@string/title_perfil" />
 

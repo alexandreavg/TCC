@@ -14,16 +14,15 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:paddingTop="20dp"
-        android:textStyle="bold"
         android:text="@string/criarUsuario"
         android:textColor="#000000"
-        android:textSize="30sp"/>
+        android:textSize="30sp"
+        android:textStyle="bold" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:paddingTop="20dp"
+        android:paddingTop="5dp"
         android:text="@string/nomeUsuario"
         android:textSize="15sp"
         />
@@ -38,7 +37,7 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:paddingTop="10dp"
+        android:paddingTop="5dp"
         android:text="@string/sobrenomeUsuario"
         android:textSize="15sp"
         />
@@ -52,7 +51,7 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:paddingTop="10dp"
+        android:paddingTop="5dp"
         android:text="@string/emailUsuario"
         android:textSize="15sp"
         />
@@ -66,52 +65,55 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:paddingTop="10dp"
+        android:paddingTop="5dp"
         android:text="@string/dataNascimento"
-        android:textSize="15sp"
-        />
+        android:textSize="15sp" />
 
     <EditText
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
         android:id="@+id/dataNascimentoUsuario"
-        android:inputType="datetime"/>
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="datetime" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:paddingTop="10dp"
+        android:paddingTop="5dp"
         android:text="@string/instituicaoUsuaio"
-        android:textSize="15sp"
-        />
+        android:textSize="15sp" />
 
     <EditText
+        android:id="@+id/instituicaoUsuario"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/instituicaoUsuario"
-        android:inputType="text"/>
+        android:inputType="text" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:paddingTop="10dp"
+        android:paddingTop="5dp"
         android:text="@string/semestreUsuario"
-        android:textSize="15sp"
-        />
+        android:textSize="15sp" />
 
     <EditText
+        android:id="@+id/semestreUsuario"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/semestreUsuario"
-        android:inputType="text"/>
+        android:inputType="text" />
+
+    <ImageButton
+        android:id="@+id/imageButton2"
+        android:layout_width="261dp"
+        android:layout_height="100dp"
+        tools:src="@tools:sample/avatars[2]" />
 
     <Button
+        android:id="@+id/btnSalvar"
         android:layout_width="135dp"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:id="@+id/btnSalvar"
-        android:text="@string/salvarCadUsuario"
         android:onClick="salvar"
+        android:text="@string/salvarCadUsuario"
         tools:ignore="OnClick" />
 
 </LinearLayout>

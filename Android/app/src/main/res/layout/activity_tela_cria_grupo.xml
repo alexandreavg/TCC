@@ -86,8 +86,14 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:paddingTop="10dp"
-        android:text="@string/addFoto"
+        android:text="@string/addFotoGrupo"
         android:textSize="15sp" />
+
+    <ImageButton
+        android:id="@+id/imageButton"
+        android:layout_width="187dp"
+        android:layout_height="wrap_content"
+        tools:src="@tools:sample/avatars" />
 
     <Button
         android:id="@+id/button"
