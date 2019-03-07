@@ -48,4 +48,9 @@
     <string name="title_grupo">Grupo</string>
     <string name="title_favorito">Favorito</string>
     <string name="title_perfil">Perfil</string>
+
+    <!-- String toolbar-->
+    <string name="item_settings">Configurações</string>
+    <string name="item_sair">Sair</string>
+
 </resources>
