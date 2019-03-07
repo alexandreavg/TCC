@@ -52,5 +52,6 @@
     <!-- String toolbar-->
     <string name="item_settings">Configurações</string>
     <string name="item_sair">Sair</string>
+    <string name="item_midia">Midia</string>
 
 </resources>

@@ -13,4 +13,9 @@
         android:title="@string/item_sair"
         android:orderInCategory="200" app:showAsAction="never"/>
 
+    <item android:id="@+id/item_midia"
+        android:title="@string/item_midia"
+        android:orderInCategory="300" app:showAsAction="ifRoom"
+        android:icon="@drawable/ic_attach_file"/>
+
 </menu>
