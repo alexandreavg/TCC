@@ -14,10 +14,11 @@ public class Login extends AppCompatActivity {
     private Button criar;
     Button entrar;
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        getSupportActionBar().hide();
+       //comando para esconder barra de titulo //getSupportActionBar().hide();
         setContentView(R.layout.activity_login);
 
         criar = (Button) findViewById(R.id.btnCadastrar);
@@ -38,6 +39,12 @@ public class Login extends AppCompatActivity {
         });
 
 
+    }
+
+    public void recuperarSenha (View view){
+
+        Intent intent = new Intent(Login.this,RecuperarSenhaActivity.class);
+        startActivity(intent);
     }
 
 }

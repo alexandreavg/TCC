@@ -1,96 +1,122 @@
 <?xml version="1.0" encoding="utf-8"?>
-<AbsoluteLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:background="@drawable/fundo"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:background="@drawable/fundo"
     android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
     tools:context=".Login">
 
     <TextView
         android:id="@+id/textView"
         android:layout_width="244dp"
         android:layout_height="wrap_content"
+        android:layout_marginStart="70dp"
+        android:layout_marginTop="77dp"
         android:layout_x="59dp"
         android:layout_y="77dp"
         android:drawableRight="@drawable/plus"
         android:gravity="center"
         android:paddingTop="20dp"
         android:text="@string/study"
-        android:textColor="#FF00AF97"
+        android:textColor="#8A0868"
         android:textSize="60sp"
         android:textStyle="bold"
         android:typeface="sans"
-        tools:layout_editor_absoluteX="48dp"
-        tools:layout_editor_absoluteY="91dp" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
         android:id="@+id/login"
-        android:layout_width="291dp"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
+        android:layout_marginStart="63dp"
+        android:layout_marginEnd="63dp"
+        android:layout_marginBottom="28dp"
         android:layout_x="44dp"
         android:layout_y="219dp"
         android:ems="10"
         android:inputType="textPersonName"
-        android:text="@string/login"
-        tools:layout_editor_absoluteX="37dp"
-        tools:layout_editor_absoluteY="235dp" />
+        android:textColor="@color/textColorPrimary"
+        android:textColorHint="@color/colorPrimaryDark"
+        app:layout_constraintBottom_toTopOf="@+id/password"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.516"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:hint="Login" />
 
     <EditText
         android:id="@+id/password"
-        android:layout_width="291dp"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="7dp"
+        android:layout_marginBottom="292dp"
         android:layout_x="44dp"
         android:layout_y="289dp"
         android:ems="10"
         android:inputType="textPassword"
-        android:text="@string/password"
-        tools:layout_editor_absoluteX="39dp"
-        tools:layout_editor_absoluteY="295dp" />
+        android:textColor="@color/textColorPrimary"
+        android:textColorHint="@color/colorPrimaryDark"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/login"
+        app:layout_constraintStart_toStartOf="@+id/btnEntrar"
+        tools:hint="Senha" />
 
     <Button
         android:id="@+id/btnCadastrar"
-        android:layout_width="117dp"
-        android:layout_height="wrap_content"
+        android:layout_width="118dp"
+        android:layout_height="52dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="52dp"
+        android:layout_marginBottom="176dp"
         android:layout_x="61dp"
         android:layout_y="414dp"
         android:onClick="cadastrar"
         android:text="@string/cadastrar"
         android:textColor="#FF00AF97"
         android:textStyle="bold"
-        tools:ignore="OnClick"
-        tools:layout_editor_absoluteX="211dp"
-        tools:layout_editor_absoluteY="436dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.619"
+        app:layout_constraintStart_toEndOf="@+id/btnEntrar"
+        tools:ignore="OnClick" />
 
     <Button
         android:id="@+id/btnEntrar"
-        android:layout_width="114dp"
+        android:layout_width="101dp"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="56dp"
+        android:layout_marginStart="52dp"
+        android:layout_marginTop="48dp"
+        android:layout_marginBottom="188dp"
         android:layout_x="191dp"
         android:layout_y="414dp"
         android:onClick="entrar"
         android:text="@string/entrar"
         android:textColor="#FF00AF97"
         android:textStyle="bold"
-        app:layout_constraintEnd_toStartOf="@+id/btnCadastrar"
-        tools:ignore="OnClick"
-        tools:layout_editor_absoluteY="436dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2"
+        tools:ignore="OnClick" />
 
     <TextView
-        android:id="@+id/esqueciSenha"
-        android:layout_width="117dp"
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="6dp"
         android:layout_x="48dp"
-        android:layout_y="344dp"
-        android:text="@string/esqueciSenha"
-        android:textColor="#FF00AF97"
-        android:textStyle="normal"
-        tools:layout_editor_absoluteX="72dp"
-        tools:layout_editor_absoluteY="370dp" />
+        android:layout_y="340dp"
+        android:text="@string/text_esqueci_senha"
+        android:textColor="@color/colorPrimaryDark"
+        app:layout_constraintStart_toStartOf="@+id/password"
+        app:layout_constraintTop_toBottomOf="@+id/password"
+        android:onClick="recuperarSenha" />
 
-</AbsoluteLayout>
+
+</android.support.constraint.ConstraintLayout>

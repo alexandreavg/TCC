@@ -21,15 +21,6 @@
     <string name="password">password</string>
     <string name="cadastrar">Cadastrar</string>
     <string name="entrar">Entrar</string>
-    <string name="esqueciSenha">Esqueci senha</string>
-    <string name="criarUsuario">Criar usuário</string>
-    <string name="nomeUsuario">Nome</string>
-    <string name="sobrenomeUsuario">Sobrenome</string>
-    <string name="emailUsuario">Email</string>
-    <string name="dataNascimento">Data de nascimento</string>
-    <string name="instituicaoUsuaio">Instituição</string>
-    <string name="semestreUsuario">Semestre</string>
-    <string name="salvarCadUsuario">Salvar</string>
     <string name="criarGrupo"> Criar grupo</string>
     <string name="nomeGrupo">Nome do grupo</string>
     <string name="nomeMateria">Nome da Matéria</string>
@@ -48,10 +39,27 @@
     <string name="title_grupo">Grupo</string>
     <string name="title_favorito">Favorito</string>
     <string name="title_perfil">Perfil</string>
-
-    <!-- String toolbar-->
     <string name="item_settings">Configurações</string>
     <string name="item_sair">Sair</string>
     <string name="item_midia">Midia</string>
+    <string name="text_esqueci_senha">Esqueci senha</string>
+    <string name="text_criar_usuario">Criar usuário</string>
+    <string name="text_nome">Nome</string>
+    <string name="text_sobrenome">Sobrenome</string>
+    <string name="text_senha">Senha</string>
+    <string name="edit_senha" />
+    <string name="text_instituicao">Instituição</string>
+    <string name="edit_instituicao" />
+    <string name="text_semestre">Semestre</string>
+    <string name="edit_semestre" />
+    <string name="btn_salvar">Salvar</string>
+    <string name="txtEmail">Email</string>
+    <string name="editEmail" />
+    <string name="text_confima_senha">Confima Senha</string>
+    <string name="text" />
+    <string name="edit_confirma_senha" />
+    <string name="text_recuperar_senha">Recuperar senha</string>
+    <string name="digite_email_rec">Digite seu email</string>
+    <string name="btn_enviar_senha">Enviar</string>
 
 </resources>

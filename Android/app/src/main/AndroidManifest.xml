@@ -13,18 +13,20 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <activity android:name=".RecuperarSenhaActivity"></activity>
+        <activity android:name=".TelaCadUsuarioActivity" />
         <activity
             android:name=".TelaInicio"
-            android:label="@string/title_activity_tela_inicio"></activity>
-        <activity android:name=".Login" >
-
+            android:label="@string/title_activity_tela_inicio" />
+        <activity android:name=".Login">
             <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-
         </activity>
         <activity android:name=".TelaCriaGrupo" />
-        <activity android:name=".TelaCadUsuarioActivity" />
+        <activity android:name=".MainActivity" />
     </application>
 
 </manifest>
