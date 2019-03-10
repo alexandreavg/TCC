@@ -14,7 +14,7 @@
         android:layout_marginStart="16dp"
         android:layout_marginTop="16dp"
         android:text="@string/text_criar_usuario"
-        android:textColor="@color/colorPrimary"
+        android:theme="@style/MyTextTheme"
         android:textSize="24sp"
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
@@ -26,9 +26,8 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="5dp"
         android:layout_marginBottom="5dp"
-
         android:text="@string/text_nome"
-        android:textColor="@color/colorPrimary"
+        android:theme="@style/MyTextTheme"
         android:textSize="14sp"
         app:layout_constraintBottom_toTopOf="@+id/editNome"
         app:layout_constraintStart_toStartOf="parent" />
@@ -38,7 +37,7 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="4dp"
-
+        android:theme="@style/MyEditTextTheme"
         android:layout_marginTop="96dp"
         android:layout_marginEnd="4dp"
         android:ems="10"
@@ -52,8 +51,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/text_sobrenome"
-        android:textColor="@color/colorPrimary"
-
+        android:theme="@style/MyTextTheme"
         app:layout_constraintStart_toStartOf="@+id/editNome"
         app:layout_constraintTop_toBottomOf="@+id/editNome" />
 
@@ -62,7 +60,7 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="4dp"
-
+        android:theme="@style/MyEditTextTheme"
         android:layout_marginEnd="4dp"
         android:ems="10"
         android:inputType="textPersonName"
@@ -75,8 +73,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/text_senha"
-        android:textColor="@color/colorPrimary"
-
+        android:theme="@style/MyTextTheme"
         app:layout_constraintStart_toStartOf="@+id/editEmail"
         app:layout_constraintTop_toBottomOf="@+id/editEmail" />
 
@@ -86,10 +83,10 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="4dp"
         android:layout_marginEnd="4dp"
-
         android:ems="10"
-        android:inputType="textPassword|numberPassword"
+        android:inputType="textPassword"
         android:text="@string/edit_senha"
+        android:theme="@style/MyEditTextTheme"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textSenha" />
@@ -99,8 +96,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/text_instituicao"
-        android:textColor="@color/colorPrimary"
-
+        android:theme="@style/MyTextTheme"
         app:layout_constraintStart_toStartOf="@+id/editConfirmaSenha"
         app:layout_constraintTop_toBottomOf="@+id/editConfirmaSenha" />
 
@@ -110,7 +106,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="4dp"
         android:layout_marginTop="16dp"
-
+        android:theme="@style/MyEditTextTheme"
         android:layout_marginEnd="4dp"
         android:ems="10"
         android:inputType="textPersonName"
@@ -124,8 +120,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/text_semestre"
-        android:textColor="@color/colorPrimary"
-
+        android:theme="@style/MyTextTheme"
         app:layout_constraintStart_toStartOf="@+id/editText4"
         app:layout_constraintTop_toBottomOf="@+id/editText4" />
 
@@ -135,7 +130,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="4dp"
         android:layout_marginEnd="4dp"
-
+        android:theme="@style/MyEditTextTheme"
         android:ems="10"
         android:inputType="textPersonName"
         android:text="@string/edit_semestre"
@@ -148,7 +143,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="31dp"
-
+        android:theme="@style/botaopadrao"
         android:text="@string/btn_salvar"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -159,8 +154,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/txtEmail"
-        android:textColor="@color/colorPrimary"
-
+        android:theme="@style/MyTextTheme"
         app:layout_constraintStart_toStartOf="@+id/editSobrenome"
         app:layout_constraintTop_toBottomOf="@+id/editSobrenome" />
 
@@ -170,7 +164,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="4dp"
         android:layout_marginEnd="4dp"
-
+        android:theme="@style/MyEditTextTheme"
         android:ems="10"
         android:inputType="textPersonName"
         android:text="@string/editEmail"
@@ -183,8 +177,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/text_confima_senha"
-        android:textColor="@color/colorPrimary"
-
+        android:theme="@style/MyTextTheme"
         app:layout_constraintStart_toStartOf="@+id/editText3"
         app:layout_constraintTop_toBottomOf="@+id/editText3"
         tools:text="Confima senha" />
@@ -195,10 +188,10 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="4dp"
         android:layout_marginEnd="4dp"
-
         android:ems="10"
-        android:inputType="textPassword|numberPassword"
+        android:inputType="textPassword"
         android:text="@string/edit_confirma_senha"
+        android:theme="@style/MyEditTextTheme"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textViewConfimeSenha" />

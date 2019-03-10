@@ -30,7 +30,7 @@
         android:ems="10"
         android:hint="@string/digite_email_rec"
         android:inputType="textPersonName"
-        android:textColor="@color/colorPrimaryDark"
+        android:theme="@style/MyEditTextTheme"
         app:layout_constraintBottom_toTopOf="@+id/btnEnviarRecSenha"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView5" />
@@ -40,7 +40,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="18dp"
-        android:text="Uma nova senhah sera enviado ao seu email"
+        android:text="Uma nova senha sera enviado ao seu email"
         android:textColor="@color/colorPrimaryDark"
         android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/editRecSenha"
