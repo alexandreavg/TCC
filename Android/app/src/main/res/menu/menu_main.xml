@@ -9,6 +9,10 @@
         android:title="@string/item_settings"
         android:orderInCategory="100" app:showAsAction="never"/>
 
+    <item android:id="@+id/item_criarGrupo"
+        android:title="@string/item_criarGrupo"
+        android:orderInCategory="100" app:showAsAction="never"/>
+
     <item android:id="@+id/item_sair"
         android:title="@string/item_sair"
         android:orderInCategory="200" app:showAsAction="never"/>

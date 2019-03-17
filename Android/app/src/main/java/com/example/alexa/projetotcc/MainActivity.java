@@ -1,12 +1,19 @@
 package com.example.alexa.projetotcc;
 
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
+import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
+
+
+
+// por enquanto nao estamos usando essa classe
+
 
 public class MainActivity extends AppCompatActivity {
 
@@ -36,7 +43,19 @@ public class MainActivity extends AppCompatActivity {
 
         switch (item.getItemId()) {
             case R.id.item_sair:
-                deslogarUsuario();
+
+                new AlertDialog.Builder(this)
+                        .setTitle("Sair")
+                        .setMessage("Tem certeza que deseja sair?")
+                        .setPositiveButton("sim",
+                                new DialogInterface.OnClickListener() {
+                                    @Override
+                                    public void onClick(DialogInterface dialogInterface, int i) {
+                                        finish();
+                                    }
+                                })
+                        .setNegativeButton("não", null)
+                        .show();
                 return true;
 
                 //  colocar mais opções da toolbaar aqui no switch

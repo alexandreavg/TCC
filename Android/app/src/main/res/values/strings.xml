@@ -21,16 +21,6 @@
     <string name="password">password</string>
     <string name="cadastrar">Cadastrar</string>
     <string name="entrar">Entrar</string>
-    <string name="criarGrupo"> Criar grupo</string>
-    <string name="nomeGrupo">Nome do grupo</string>
-    <string name="nomeMateria">Nome da Matéria</string>
-    <string name="statusGrupo">Status</string>
-    <string name="statusPublicoGrupo">Público</string>
-    <string name="statusPrivadoGrupo">Privado</string>
-    <string name="integrantes">Integrantes</string>
-    <string name="addFotoGrupo">Adicionar Foto</string>
-    <string name="addFotoUsuario">Adicionar Foto</string>
-    <string name="salvarGrupo">Criar </string>
     <string name="title_activity_tela_principal">TelaPrincipal</string>
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
@@ -40,6 +30,7 @@
     <string name="title_favorito">Favorito</string>
     <string name="title_perfil">Perfil</string>
     <string name="item_settings">Configurações</string>
+    <string name="item_criarGrupo">Criar grupo</string>
     <string name="item_sair">Sair</string>
     <string name="item_midia">Midia</string>
     <string name="text_esqueci_senha">Esqueci senha</string>
@@ -61,5 +52,14 @@
     <string name="text_recuperar_senha">Recuperar senha</string>
     <string name="digite_email_rec">Digite seu email</string>
     <string name="btn_enviar_senha">Enviar</string>
+    <string name="text_criar_grupo">Criar Grupo</string>
+    <string name="text_nome_grupo">Nome do grupo</string>
+    <string name="edit_nome_grupo" />
+    <string name="text_nome_materia">Nome da matéria</string>
+    <string name="text_status">Status</string>
+    <string name="rbn_privado">Privado</string>
+    <string name="rbn_publico">Público</string>
+    <string name="text_adicionar_foto">Adicionar Foto</string>
+    <string name="text_integrantes">Integrantes</string>>
 
 </resources>

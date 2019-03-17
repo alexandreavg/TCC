@@ -1,105 +1,162 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
     android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
     tools:context=".TelaCriaGrupo">
 
+
     <TextView
+        android:id="@+id/textView10"
         android:layout_width="wrap_content"
-        android:layout_height="66dp"
-        android:paddingTop="20dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="36dp"
+        android:text="@string/text_criar_grupo"
+        android:textSize="24sp"
         android:textStyle="bold"
-        android:text="@string/criarGrupo"
-        android:textColor="#000000"
-        android:textSize="30sp" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
+        android:id="@+id/textViewNomeGrupo"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:paddingTop="20dp"
-        android:text="@string/nomeGrupo"
-        android:textSize="15sp" />
+        android:layout_height="0dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="112dp"
+        android:text="@string/text_nome_grupo"
+        android:theme="@style/MyTextTheme"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="@string/text_nome_grupo" />
 
     <EditText
-        android:id="@+id/nomeGrupo"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:inputType="text" />
-    <requestFocus/>
+        android:id="@+id/editText2"
+        android:layout_width="384dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="136dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="@string/edit_nome_grupo"
+        android:theme="@style/MyEditTextTheme"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
+        android:id="@+id/textView12"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:paddingTop="10dp"
-        android:text="@string/nomeMateria"
-        android:textSize="15sp" />
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="188dp"
+        android:text="@string/text_nome_materia"
+        android:theme="@style/MyTextTheme"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
-        android:id="@+id/nomeMateria"
-        android:layout_width="match_parent"
+        android:id="@+id/editText5"
+        android:layout_width="384dp"
         android:layout_height="wrap_content"
-        android:inputType="text" />
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="212dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:theme="@style/MyEditTextTheme"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
+        android:id="@+id/textView13"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:paddingTop="10dp"
-        android:text="@string/statusGrupo"
-        android:textSize="15sp" />
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="320dp"
+        android:text="@string/text_status"
+        android:theme="@style/MyTextTheme"
+        app:layout_constraintEnd_toStartOf="@+id/radioGroup2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <RadioGroup
-        android:layout_width="265dp"
-        android:layout_height="77dp">
+        android:id="@+id/radioGroup2"
+        android:layout_width="258dp"
+        android:layout_height="98dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="280dp"
+        android:checkedButton="@+id/radioGroupStatus"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView13"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
 
         <RadioButton
-            android:id="@+id/rbtnStatusPrivadoGrupo"
+            android:id="@+id/radioButton3"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/statusPrivadoGrupo" />
+            android:layout_weight="1"
+            android:text="@string/rbn_privado"
+            android:theme="@style/MyTextTheme" />
 
         <RadioButton
-            android:id="@+id/rbtnStatusPublicoGrupo"
+            android:id="@+id/radioButton2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/statusPublicoGrupo" />
+            android:layout_weight="1"
+            android:text="@string/rbn_publico"
+            android:theme="@style/MyTextTheme"
+            tools:text="@string/rbn_publico" />
     </RadioGroup>
 
     <TextView
+        android:id="@+id/textView14"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/integrantes"
-        android:textSize="15sp" />
-
-    <NumberPicker
-        android:id="@+id/numberPickerIntegrante"
-        android:layout_width="wrap_content"
-        android:layout_height="47dp" />
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="488dp"
+        android:text="@string/text_adicionar_foto"
+        android:theme="@style/MyTextTheme"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
+        android:id="@+id/textView15"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:paddingTop="10dp"
-        android:text="@string/addFotoGrupo"
-        android:textSize="15sp" />
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="416dp"
+        android:text="@string/text_integrantes"
+        android:theme="@style/MyTextTheme"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
-    <ImageButton
-        android:id="@+id/imageButton"
-        android:layout_width="187dp"
-        android:layout_height="wrap_content"
-        tools:src="@tools:sample/avatars" />
 
     <Button
         android:id="@+id/button"
-        android:layout_width="135dp"
+        android:layout_width="109dp"
         android:layout_height="wrap_content"
-        android:layout_gravity="center_horizontal"
-        android:text="@string/salvarGrupo" />
+        android:layout_marginStart="132dp"
+        android:layout_marginTop="544dp"
+        android:text="@string/btn_salvar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
-</LinearLayout>
+    <NumberPicker
+        android:id="@+id/numberPicker1"
+        android:layout_width="wrap_content"
+        android:layout_height="58dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="400dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+</android.support.constraint.ConstraintLayout>
