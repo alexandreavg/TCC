@@ -1,10 +1,7 @@
 package com.example.alexa.projetotcc;
 
-import android.app.Activity;
-import android.support.v7.app.AppCompatActivity;
+import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
-import android.widget.NumberPicker;
-import android.widget.TextView;
 
 public class TelaCriaGrupo extends AppCompatActivity {
 

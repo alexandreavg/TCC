@@ -60,6 +60,8 @@
     <string name="rbn_privado">Privado</string>
     <string name="rbn_publico">Público</string>
     <string name="text_adicionar_foto">Adicionar Foto</string>
-    <string name="text_integrantes">Integrantes</string>>
+    <string name="hint_senha">Senha</string>
+    <string name="hint_login">Login</string>
+    <string name="text_integrantes">Senha</string>
 
 </resources>
