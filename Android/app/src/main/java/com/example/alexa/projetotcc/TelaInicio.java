@@ -41,12 +41,6 @@ public class TelaInicio extends AppCompatActivity {
         }
     };
 
-
-
-
-
-
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
