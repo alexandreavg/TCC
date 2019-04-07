@@ -102,7 +102,7 @@
         android:id="@+id/textViewInstituicao"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/text_instituicao"
+        android:text="@string/text_curso"
         android:theme="@style/MyTextTheme"
         app:layout_constraintStart_toStartOf="@+id/editConfirmaSenha"
         app:layout_constraintTop_toBottomOf="@+id/editConfirmaSenha" />
@@ -117,7 +117,7 @@
         android:layout_marginEnd="4dp"
         android:ems="10"
         android:inputType="textPersonName"
-        android:text="@string/edit_instituicao"
+        android:text="@string/edit_curso"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/textViewInstituicao" />
