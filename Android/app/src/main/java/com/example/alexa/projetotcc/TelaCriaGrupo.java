@@ -3,6 +3,8 @@ package com.example.alexa.projetotcc;
 import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 
+import com.example.alexa.projetotcc.R;
+
 public class TelaCriaGrupo extends AppCompatActivity {
 
     @Override
