@@ -15,8 +15,19 @@ public class Conexao extends SQLiteOpenHelper {
 
     @Override
     public void onCreate(SQLiteDatabase db) {
-        String sql = "CREATE TABLE aluno(id integer primary key autoincrement, " +
-                "nome varchar(50), idade integer)";
+        String sql = "CREATE TABLE aluno(codigo integer primary key autoincrement, " +
+                "nome varchar(50)," +
+                "sobrenome varchar(50)," +
+                "email varchar(30)," +
+                "senha varchar(20)," +
+                "curso varchar(25)," +
+                "semestre varchar(15)) ";
+        db.execSQL(sql);
+        sql = "CREATE TABLE grupo(codigo integer primary key autoincrement, " +
+                "nomeGrupo varchar(20)," +
+                "materia varchar(20)," +
+                "numIntegrantes integer," +
+                "status varchar(20))";
         db.execSQL(sql);
     }
 
