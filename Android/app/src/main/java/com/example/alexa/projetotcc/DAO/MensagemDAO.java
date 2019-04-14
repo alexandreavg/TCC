@@ -43,20 +43,18 @@ public class MensagemDAO {
         return lista;
     }
 
-    public void atualizar(Aluno aluno){
+    public void atualizar(Mensagem mensagem){
         ContentValues values= new ContentValues();
-        values.put("nome", aluno.getNome());
-        values.put("semestre", aluno.getSemestre());
-        values.put("curso", aluno.getCurso());
-        values.put("senha", aluno.getSenha());
-        values.put("email", aluno.getEmail());
-        values.put("sobrenome", aluno.getSobreNome());
+        values.put("mensagem", mensagem.getDataMens());
+        values.put("mensagem", mensagem.getIdAluno());
+        values.put("mensagem", mensagem.getTextoMens());
+        values.put("mensagem", mensagem.getIdGrupo());
 
-        banco.update("aluno", values, "codigo = ?", new String[]{aluno.getCodigo().toString()});
+        banco.update("mensagem", values, "codigo = ?", new String[]{mensagem.getCodigo().toString()});
     }
 
-    public void excluir(Aluno aluno){
-        banco.delete("aluno", "codigo = ?", new String[]{aluno.getCodigo().toString()});
+    public void excluir(Mensagem mensagem){
+        banco.delete("mensagem", "codigo = ?", new String[]{mensagem.getCodigo().toString()});
     }
 
 }

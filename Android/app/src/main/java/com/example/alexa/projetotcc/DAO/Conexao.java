@@ -41,10 +41,11 @@ public class Conexao extends SQLiteOpenHelper {
         db.execSQL(sql);
 
         sql = "CREATE TABLE avaliacao(codigo integer primary key autoincrement, " +
-                "dataMens varchar(20), " +
-                "idAluno integer," +
-                "textoMens varchar(250)," +
-                "idGrupo integer)";
+                "idAluno integer, " +
+                "comentario varhar(250)," +
+                "nota float," +
+                "idGrupoAvaliado integer," +
+                "dataAv varchar(20))";
         db.execSQL(sql);
     }
 
