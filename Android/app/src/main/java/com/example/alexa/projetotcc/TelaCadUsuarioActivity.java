@@ -47,14 +47,6 @@ public class TelaCadUsuarioActivity extends AppCompatActivity {
             senha.setText(aluno.getSenha());
         }
 
-        /*
-        salvar.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                startActivity(new Intent(TelaCadUsuarioActivity.this,TelaInicio.class));
-
-            }
-        });*/
     }
 
     public void salvar(View v){

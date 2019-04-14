@@ -112,7 +112,7 @@ public class MainActivity extends AppCompatActivity implements BottomNavigationV
             default:
                 return super.onOptionsItemSelected(item);
 
-            /*case R.id.item_pesquisar:
+           /* case R.id.item_pesquisar:
                 SearchManager searchManager = (SearchManager) getSystemService(Context.SEARCH_SERVICE);
                 SearchView searchView = (SearchView) item.findItem(R.id.item_pesquisar)
                         .getActionView();
