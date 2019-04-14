@@ -4,6 +4,8 @@ import android.content.Context;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 
+import java.util.Date;
+
 public class Conexao extends SQLiteOpenHelper {
 
     private static final String name = "banco.db";
@@ -23,11 +25,26 @@ public class Conexao extends SQLiteOpenHelper {
                 "curso varchar(25)," +
                 "semestre varchar(15)) ";
         db.execSQL(sql);
+
         sql = "CREATE TABLE grupo(codigo integer primary key autoincrement, " +
                 "nomeGrupo varchar(20)," +
                 "materia varchar(20)," +
                 "numIntegrantes integer," +
                 "status varchar(20))";
+        db.execSQL(sql);
+
+        sql = "CREATE TABLE mensagem(codigo integer primary key autoincrement, " +
+                "dataMens varchar(20), " +
+                "idAluno integer," +
+                "textoMens varchar(250)," +
+                "idGrupo integer)";
+        db.execSQL(sql);
+
+        sql = "CREATE TABLE avaliacao(codigo integer primary key autoincrement, " +
+                "dataMens varchar(20), " +
+                "idAluno integer," +
+                "textoMens varchar(250)," +
+                "idGrupo integer)";
         db.execSQL(sql);
     }
 
