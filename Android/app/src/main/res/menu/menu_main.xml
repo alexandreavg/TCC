@@ -19,8 +19,11 @@
 
     <item android:id="@+id/item_pesquisar"
         android:title="Pesquisar"
-        android:orderInCategory="300" app:showAsAction="ifRoom"
-        android:icon="@drawable/ic_search"/>
+        android:orderInCategory="300"
+        app:actionViewClass="android.widget.SearchView"
+        app:showAsAction="collapseActionView|ifRoom"
+        android:icon="@drawable/ic_search"
+        />
 
     <item android:id="@+id/item_midia"
         android:title="@string/item_midia"
