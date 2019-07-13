@@ -123,13 +123,7 @@ public class MainActivity extends AppCompatActivity implements BottomNavigationV
 
     }
 
-    public void entrarChat(){
-        Intent intent = new Intent(MainActivity.this,ChatActivity.class);
-        startActivity(intent);
-        finish();
-    }
-
-    public void deslogarUsuario(){
+     public void deslogarUsuario(){
         // adicionar aqui o metodo para deslogar
 
         Intent intent = new Intent(MainActivity.this,Login.class);

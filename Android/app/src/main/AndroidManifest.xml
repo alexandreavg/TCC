@@ -19,7 +19,6 @@
         <activity android:name=".MainActivity"></activity>
         <activity android:name=".ListarAlunosActivity"></activity>
         <activity android:name=".TelaCadUsuarioActivity" />
-        <activity android:name=".ChatActivity" />
         <activity android:name=".Login">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
