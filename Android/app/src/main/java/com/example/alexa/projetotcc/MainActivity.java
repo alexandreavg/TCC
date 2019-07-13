@@ -15,7 +15,6 @@ import com.example.alexa.projetotcc.fragments.MeusGruposFragment;
 import com.example.alexa.projetotcc.fragments.PerfilFragment;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
-import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.SearchView;
 import androidx.appcompat.widget.Toolbar;
@@ -42,7 +41,7 @@ public class MainActivity extends AppCompatActivity implements BottomNavigationV
 
 
     @Override
-    public void onNavigationItemReselected(@NonNull MenuItem menuItem) {
+    public void onNavigationItemReselected( MenuItem menuItem) {
         switch (menuItem.getItemId()) {
             case R.id.navigation_favorito:
                 getSupportActionBar().setTitle("Favoritos");

@@ -72,6 +72,7 @@ public class ChatActivity extends AppCompatActivity implements RoomListener {
         System.err.println(ex);
     }
 
+
     @Override
     public void onMessage(Room room, JsonNode message, Member member) {
         Message m = new Message();

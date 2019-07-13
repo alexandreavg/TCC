@@ -2,22 +2,62 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
+    android:clipToPadding="false"
     android:paddingVertical="10dp"
-    android:paddingRight="15dp"
-    android:paddingLeft="60dp"
-    android:clipToPadding="false">
+    android:paddingLeft="15dp"
+    android:paddingRight="60dp">
+
+    <View
+        android:id="@+id/avatar"
+        android:layout_width="34dp"
+        android:layout_height="34dp"
+        android:layout_alignParentLeft="true"
+        android:background="@drawable/circle"
+        android:scaleType="centerInside" />
 
     <TextView
+        android:id="@+id/name"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/message_body"
-        android:background="@drawable/my_message"
-        android:textColor="#fff"
-        android:padding="10dp"
-        android:elevation="2dp"
-        android:textSize="18dp"
-        android:layout_alignParentRight="true"
-        android:text="Placeholder message"
-        />
+        android:layout_alignTop="@+id/avatar"
+        android:layout_marginLeft="15dp"
+        android:layout_toRightOf="@+id/avatar"
+        android:paddingBottom="5dp"
+        android:text="Eu" />
 
+    <TextView
+        android:id="@+id/data"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/avatar"
+        android:layout_marginLeft="180dp"
+        android:layout_toRightOf="@+id/avatar"
+        android:paddingBottom="5dp"
+        android:text="Data"
+        android:textColor="@color/DataHora" />
+
+    <TextView
+        android:id="@+id/hora"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/avatar"
+        android:layout_marginLeft="220dp"
+        android:layout_toRightOf="@+id/avatar"
+        android:paddingBottom="5dp"
+        android:text="Hora"
+        android:textColor="@color/DataHora" />
+
+    <TextView
+        android:id="@+id/message_body"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/name"
+        android:layout_alignLeft="@+id/name"
+        android:background="@drawable/their_message"
+        android:backgroundTint="@color/myMessage"
+        android:elevation="2dp"
+        android:paddingHorizontal="16dp"
+        android:paddingVertical="12dp"
+        android:text="How are you doing? This is a long message that should probably wrap."
+        android:textSize="18dp" />
 </RelativeLayout>
