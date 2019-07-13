@@ -74,8 +74,6 @@ public class TelaCadUsuarioActivity extends AppCompatActivity {
         }
     }
 
-    public void telaListar(View v){
-        Intent intent = new Intent(this, ListarAlunosActivity.class);
-        startActivity(intent);
-    }
+
+
 }

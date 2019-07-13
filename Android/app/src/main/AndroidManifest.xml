@@ -17,7 +17,6 @@
         android:networkSecurityConfig="@xml/network_security_config">
         <activity android:name=".RecuperarSenhaActivity"></activity>
         <activity android:name=".MainActivity"></activity>
-        <activity android:name=".ListarAlunosActivity"></activity>
         <activity android:name=".TelaCadUsuarioActivity" />
         <activity android:name=".Login">
             <intent-filter>

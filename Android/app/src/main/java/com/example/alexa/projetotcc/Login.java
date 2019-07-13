@@ -44,9 +44,7 @@ public class Login extends AppCompatActivity {
         Intent intent = new Intent(Login.this, RecuperarSenhaActivity.class);
         startActivity(intent);
     }
-    public void telaListar(View v){
-        Intent intent = new Intent(this, ListarAlunosActivity.class);
-        startActivity(intent);
-    }
+
+
 
 }

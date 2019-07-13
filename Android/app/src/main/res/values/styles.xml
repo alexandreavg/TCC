@@ -31,13 +31,6 @@
         <item name="colorPrimary">@color/colorPrimary</item>
     </style>
 
-    <style name="MyMessage">
-        <item name="myMessage">@color/myMessageColor</item>
-    </style>
-
-    <style name="TherMessage">
-        <item name="thereMessages">@color/therMessageColor</item>
-    </style>
 
 
 
