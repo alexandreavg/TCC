@@ -137,10 +137,6 @@ public class MainActivity extends AppCompatActivity implements BottomNavigationV
         finish();
     }
 
-    public void listarAlunos(){
-        Intent intent = new Intent(this, ListarAlunosActivity.class);
-        startActivity(intent);
-    }
 }
 
 
